@@ -1,0 +1,72 @@
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    .row{
+        width: 90%;
+    }
+    .col-left, .col-right{
+        background-color: transparent;
+        height: 80vh;
+    }
+    .col-right{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: solid 3px #d50000;
+        overflow-y: hidden;
+    }
+    .project-element{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        .project-title{
+            color: #d50000;
+            text-align: center;
+        }
+        .carousel-container{
+            width: 65%;
+        }
+        .links-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 35%;
+            .link-out{
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                    color: #d50000;
+                }
+            }
+        }
+    }
+
+    .project-link-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        overflow-y: hidden;
+        .project-link{
+            color: #d50000;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            &:hover{
+                background-image: linear-gradient(62deg, #d50000, #d60000);
+                color: #fff; 
+                transition: ease-out 0.5s;
+            }
+        }
+        .activo{
+            background-image: linear-gradient(62deg, #d50000, #d60000);
+            color: #fff;
+        }
+    }
+}

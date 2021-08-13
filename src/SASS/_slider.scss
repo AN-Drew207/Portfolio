@@ -1,0 +1,10 @@
+.carousel-indicators {
+    [data-bs-target]{
+        background-color: transparent;
+        border-bottom: solid rgba($color: #d50000, $alpha: 1) 2px;
+        height: auto;
+        margin: 0;
+        text-indent: 0px!important;
+        width: 100%;
+    }
+}

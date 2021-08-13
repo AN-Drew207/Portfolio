@@ -1,0 +1,12 @@
+#nav{
+    .img-logo{
+        height: 30px;
+    }
+    .nav-item{
+        border-bottom: solid transparent 3px;
+        &:hover{
+            border-bottom: solid #d50000 3px ;
+            transition: linear 1s;
+        }
+    }
+}

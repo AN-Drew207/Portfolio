@@ -1,0 +1,40 @@
+#about{
+    @extend #main;
+    min-height: 100vh;
+    padding: 5vh 5vw;
+    .title-about{
+        color: #d50000;
+        text-align: center;
+        width: 100%;
+    }
+    .paragraph-about{
+        color: #fff;
+        text-align: center;
+    }
+    .language{
+       align-items: center;
+       background-repeat: no-repeat;
+       border-radius: 50%;
+       border: solid 2px #d50000;
+       display: flex;
+       justify-content: center;
+       height: 100px;
+       width: 100px;
+       .language-container{
+           @extend .language;
+           width: 100px;
+           align-items: flex-end;
+           position: absolute;
+           .language-background{
+            background-color:#fff;
+            height: 100px;
+            width: 100px;
+           }
+           
+       }
+       .container-img{
+           padding: 10%;
+           z-index: 1;
+       }
+    }
+}

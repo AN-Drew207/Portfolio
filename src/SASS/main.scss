@@ -1,0 +1,17 @@
+@import 'config';
+@import 'navbar';
+@import 'mainSection';
+@import 'slider';
+@import 'about';
+@import 'projects';
+@import 'contact';
+#tsparticles{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    overflow-y: hidden;
+}
+
