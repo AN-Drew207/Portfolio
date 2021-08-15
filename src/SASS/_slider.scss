@@ -8,3 +8,13 @@
         width: 100%;
     }
 }
+.carousel-item{
+    overflow-y: hidden;
+}
+
+.title, .title-about{
+        color: #d50000;
+        text-align: center;
+        width: 100%;
+        overflow-y: hidden;
+}

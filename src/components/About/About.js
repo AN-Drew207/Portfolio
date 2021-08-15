@@ -1,20 +1,45 @@
-import React, {useState} from 'react' 
+import React from 'react' 
 import reactpng from '../../img/react.png' 
+import HTML from '../../img/HTML5.png'
+import CSS from '../../img/css3.png'
+import SASS from '../../img/sass-logo-new.png'
+import js from '../../img/js.png'
 import Language from './Language'
 
-const About = () =>{
+const About = (props) =>{
 
     const languages =[
         {
+            name:"React",
             image:reactpng,
+            finish:"80"
+        },
+        {
+            name:"HTML",
+            image:HTML,
+            finish:"95"
+        },
+        {
+            name:"CSS",
+            image:CSS,
             finish:"90"
-        }
+        },
+        {
+            name:"SASS",
+            image:SASS,
+            finish:"90"
+        },
+        {
+            name:"JavaScript",
+            image:js,
+            finish:"95"
+        },
     ]
 
     return( 
         <section id="about">
-            <div className="container-fluid h-100 d-flex flex-column" >
-                <div className="d-flex flex-column h-auto">
+            <div className="container-about">
+                <div className=" d-dlock h-auto">
                     <h3 className="title-about">About</h3>
                     <p className="paragraph-about">
                         ¡Hello Everyone! My name is Andrés Contreras, I live in Caracas, Venezuela and
@@ -23,7 +48,7 @@ const About = () =>{
                         make web apps and web pages about anything, 
                         likes to experiments with new technologies and learn how to use them. <br/><br/>
                         I'm on my way to become to a Full Stack Developer, 
-                        I want to learn tecnologies like Next, Express and MongoDB, I already learned 
+                        I'm about to learn tecnologies like Next, Express and MongoDB, I already learned 
                         React, Bootstrap, SASS and the basic ones, HTML, CSS and JS. 
                         I'm so excited to learn BackEnd new languages and get expert on FrontEnd.<br/><br/>
                         I like to make interesting projects, that represent a challenge for me as a 
@@ -31,15 +56,17 @@ const About = () =>{
                         rest assured that I will do my best to carry it out. 
                     </p>
                 </div>
-                <div className="d-flex flex-column">
+                <div className="d-block h-auto">
                     <h3 className="title-about">Languages and Technologies</h3>
-                    <div className="d-flex flex-row align-items-center justify-content-center">
+                    <div className="languages-container">
                         {
                             languages.map(language =>{
                                 return(
                                     <Language
                                         img={language.image}
                                         finish={language.finish}
+                                        update={props.update}
+                                        name={language.name}
                                     />
                                 )
                             })

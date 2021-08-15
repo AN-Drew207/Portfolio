@@ -1,0 +1,165 @@
+@media (max-width:767px){
+    .languages-container{
+        grid-template-columns: repeat(3,auto)!important;
+    }
+    #contact{
+        padding: 15px;
+        flex-direction: column;
+        .title{
+            font-size: 17px;
+        }
+        .form-control{
+            font-size: 13px;
+            width: 200px;
+        }
+        .btn{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width:767px){
+    #contact{
+        flex-direction: row;
+    }
+    #projects{
+        .project-text-container{
+            flex-direction: row;
+        }
+        .slider-links-container{
+            flex-direction: row;
+        }
+    }
+}
+
+@media (min-width:992px){
+    #projects{
+        .form{
+            display: none!important;
+        }
+    }
+}
+
+
+@media (max-width:992px){
+    #projects{
+        .form{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            .select-project{
+                border: solid 2px #d50000;
+                color: #fff;
+                padding: 5px;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background: url("../img/up-arrow.png") 98% / 20px 10px no-repeat transparent;
+            }
+            
+        }
+        padding: 15px;
+        justify-content: flex-start;
+        align-items: center;
+        .col-left{
+            display: none!important;
+        }
+        .project-title{
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+        .slider-links-container{
+            flex-direction: column;
+            .carousel-container{
+                width: 70%!important;
+                height: auto;
+            }
+            .menu-project{
+                width: 100%;
+                padding: 0px !important;
+                height: auto;
+                nav{
+                    height: auto;
+                }
+            }
+            .imgs-container{
+                display: flex!important;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                height: auto;
+                .img-container{
+                    width: 15%;
+                    margin: 0px 10px;
+                    padding: 0;
+                }
+            }
+            .paragraph-description{
+                font-size: 13px;
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:575px){
+    #main{
+        flex-direction: column!important;
+    }
+    .logo-main{
+        margin: 10vh 10vw;
+    }
+    .carousel-indicators{
+        margin-right: 0!important;
+        margin-left: 0!important;
+        .mx-2{
+            h6{
+                font-size: 14px;
+            }
+        }
+    }
+    .languages-container{
+        grid-template-columns: repeat(2,auto)!important;
+    }
+}
+
+@media (max-height:565px) {
+    #contact{
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            li{
+                padding: 0px 10px;
+                .link-out{
+                    font-size: 30px!important;
+                }
+            }
+        }
+        .link-out{
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:400px){
+    #projects{
+        select{
+            font-size: 12px;
+        }
+        .btn-project-inner{
+            font-size: 15px;
+        }
+        .link-out{
+            font-size: 12px;
+        }
+    }
+}

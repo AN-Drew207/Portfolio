@@ -10,7 +10,7 @@ import 'pathseg'
 
 const SliderComponent = () =>{
 
-    const [update, setUpdate]=useState(false)
+    const [update, setUpdate]=useState(0)
 
     return( 
         <section>
@@ -111,7 +111,7 @@ const SliderComponent = () =>{
                             className="d-flex aling-items-center" 
                             data-bs-slide-to="1" 
                             aria-label="Slide 2">
-                                <h6 onClick={()=>setUpdate(prev=>!prev)} className="text-white text-center">About</h6>
+                                <h6 onClick={()=>setUpdate(prev=>prev+1)} className="text-white text-center">About</h6>
                         </button>
                     </div>
                     <div className="mx-2">

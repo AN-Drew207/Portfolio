@@ -1,4 +1,48 @@
 #contact{
     width: 100vw;
     height: 100vh;
+    padding: 10vh 10vw;
+    .form-control{
+        border-color: #fff;
+        outline: none;
+        box-shadow: none;
+        resize: none;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        
+    }
+
+    ul{
+        width: fit-content;
+    }
+    .btn-danger{
+        background-color: #d50000;
+        border-color: #d50000;
+        width: min-content;
+        &:focus{
+            box-shadow: none;
+        }
+        &:active{
+            background-color: #fff;
+            color: #d50000;
+        }
+    }
+
+}
+.modal-text{
+    color: #d50000;
+    text-align: center;
+}
+
+.popup-content { 
+      
+      margin: auto;
+      background: #111!important;  
+      border: solid 1px #d50000 !important;
+      border-radius: 10px;
+      padding: 20px!important;
+      width: 50%;  
+      padding: 5px;
 }
