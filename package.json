@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://an-drew207.github.io/Portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -10,6 +11,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.1.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "granim": "^2.0.0",
     "node-sass": "^6.0.1",
     "particles.js": "^2.0.0",
@@ -33,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

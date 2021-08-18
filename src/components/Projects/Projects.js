@@ -34,6 +34,7 @@ const Projects = () =>{
             },
             description:"ROPA Ecommerce WebSide is an Ecommerce Example with all the features that an Ecommerce needs, Products setions, Cart, Single Products-Page.",
             repository: "https://github.com/AN-Drew207/ROPA-Ecommerce",
+            web:"https://an-drew207.github.io/ROPA-Ecommerce/#/",
             technologies:[reactpng, SASS]
         }
     )

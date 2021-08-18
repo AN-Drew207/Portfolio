@@ -125,7 +125,7 @@ const Links = (props) =>{
     return(
         <div className="d-flex links-out-container">
             <a target="_blank" rel="noreferrer" className="link-out"  href={props.repository}><i class="bi bi-braces"></i> Repository</a>
-            <a target="_blank" rel="noreferrer" className="link-out"  href={props.web}><i class="bi bi-file-post-fill"></i> Web-Side</a>
+            <a target="_blank" rel="noreferrer" className="link-out"  href={props.web}><i class="bi bi-file-post-fill"></i> Web-Site</a>
         </div>
     )
 }
